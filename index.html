@@ -53,17 +53,9 @@
             background: #f9fafb;
         }
 
-        /* Fix hover color and remove CSS typo */
-.navbar-nav .nav-link:hover {
-    color: #facc15 !important;
-}
-
-/* Make the hamburger icon more visible */
-.navbar-dark .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' 
-    xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' 
-    stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
+        .navbar a:hover {
+            color: #facc15 !important;
+        }
 
         .hero-img img {
             border-radius: 50%;
@@ -131,25 +123,24 @@
 <body class="text-gray-900">
 
     <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-blue-900 sticky-top shadow-md">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Ali.dev</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto text-center">
-        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Hire Me</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    <nav
+        class="navbar navbar-expand-lg navbar-dark bg-blue-900 py-3 px-4 sticky-top shadow-md flex justify-between items-center">
+        <a class="navbar-brand font-bold text-xl" href="#">Ali.dev</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-end" id="navbarNav">
+            <ul class="navbar-nav ms-auto flex flex-col md:flex-row md:space-x-6">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Hire Me</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <!-- HERO -->
     <section id="home"
@@ -291,38 +282,6 @@
         });
     </script>
 
-
-    <!-- Add this script at the bottom, after Bootstrap JS -->
-<script>
-  // Prevent mobile menu from instantly hiding on link click
-  document.querySelectorAll('.navbar-nav .nav-link').forEach(function (link) {
-    link.addEventListener('click', function () {
-      var navbarCollapse = document.getElementById('navbarNav');
-      if (navbarCollapse.classList.contains('show')) {
-        // Collapse the menu after a short delay to allow smooth scrolling
-        setTimeout(() => {
-          new bootstrap.Collapse(navbarCollapse).toggle();
-        }, 200); 
-      }
-    });
-  });
-</script>
-
-
-   
-
-
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
