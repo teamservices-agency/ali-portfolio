@@ -3,12 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ali | Meta Ads Expert, SEO Specialist & Web Developer</title>
     <meta name="description"
         content="Hire Ali – Meta Ads Expert, SEO Specialist & Web Developer. I help businesses grow with SEO, Meta Ads & high-converting websites.">
     <meta name="keywords"
         content="SEO, Meta Ads, Web Development, Digital Marketing, React.js, Tailwind CSS, Bootstrap, HTML, CSS, JavaScript, jQuery">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -16,42 +16,41 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- React -->
-    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Ali | Meta Ads Expert, SEO Specialist & Web Developer">
     <meta property="og:description" content="I help businesses grow with Meta Ads, SEO & high-converting websites.">
-    <meta property="og:image" content="https://i.ibb.co/GQH11mTn/Whats-App-Image-2025-12-20-at-5-26-22-PM-1.jpg">
+    <meta property="og:image"
+        content="https://i.ibb.co/GQH11mTn/Whats-App-Image-2025-12-20-at-5-26-22-PM-1.jpg">
     <meta property="og:url" content="https://yourwebsite.com">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Ali | Meta Ads & Web Developer">
     <meta name="twitter:description" content="Meta Ads, SEO & Web Development for real business growth.">
-    <meta name="twitter:image" content="https://i.ibb.co/GQH11mTn/Whats-App-Image-2025-12-20-at-5-26-22-PM-1.jpg">
+    <meta name="twitter:image"
+        content="https://i.ibb.co/GQH11mTn/Whats-App-Image-2025-12-20-at-5-26-22-PM-1.jpg">
 
     <!-- SEO Schema -->
     <script type="application/ld+json">
-{
- "@context":"https://schema.org",
- "@type":"Person",
- "name":"Ali",
- "jobTitle":"Meta Ads Expert, SEO Specialist & Web Developer",
- "image":"https://i.ibb.co/GQH11mTn/Whats-App-Image-2025-12-20-at-5-26-22-PM-1.jpg",
- "url":"https://yourwebsite.com",
- "description":"Professional Meta Ads Expert, SEO Specialist & Web Developer helping businesses grow with high-converting websites.",
- "knowsAbout":["SEO","Meta Ads","Facebook Ads","Instagram Ads","Web Development","React.js","Bootstrap","Tailwind CSS","HTML","CSS","JavaScript","jQuery"]
-}
-</script>
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Ali",
+            "jobTitle": "Meta Ads Expert, SEO Specialist & Web Developer",
+            "image": "https://i.ibb.co/GQH11mTn/Whats-App-Image-2025-12-20-at-5-26-22-PM-1.jpg",
+            "url": "https://yourwebsite.com",
+            "description": "Professional Meta Ads Expert, SEO Specialist & Web Developer helping businesses grow with high-converting websites.",
+            "knowsAbout": ["SEO","Meta Ads","Facebook Ads","Instagram Ads","Web Development","React.js","Bootstrap","Tailwind CSS","HTML","CSS","JavaScript","jQuery"]
+        }
+    </script>
 
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background: #f9fafb;
             scroll-behavior: smooth;
+            background: #f9fafb;
         }
 
         .navbar a:hover {
@@ -63,6 +62,8 @@
             border: 6px solid #fff;
             box-shadow: 0 25px 60px rgba(0, 0, 0, .3);
             animation: float 4s ease-in-out infinite;
+            max-width: 100%;
+            height: auto;
         }
 
         @keyframes float {
@@ -117,44 +118,50 @@
             transform: scale(1.1);
         }
     </style>
-
 </head>
 
 <body class="text-gray-900">
 
     <!-- NAVBAR -->
     <nav
-        class="navbar navbar-expand-lg bg-blue-900 text-white py-3 px-5 flex justify-between items-center sticky top-0 z-50">
+        class="navbar navbar-expand-lg navbar-dark bg-blue-900 py-3 px-4 sticky-top shadow-md flex justify-between items-center">
         <a class="navbar-brand font-bold text-xl" href="#">Ali.dev</a>
-        <ul class="flex space-x-6">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Hire Me</a></li>
-        </ul>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-end" id="navbarNav">
+            <ul class="navbar-nav ms-auto flex flex-col md:flex-row md:space-x-6">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Hire Me</a></li>
+            </ul>
+        </div>
     </nav>
 
     <!-- HERO -->
     <section id="home"
-        class="grid md:grid-cols-2 items-center px-8 py-20 bg-gradient-to-r from-blue-700 to-blue-900 text-white">
-        <div class="hero-content space-y-5">
-            <h1 class="text-4xl font-bold">I Help Businesses Grow with <span class="text-yellow-400">SEO</span>, <span
-                    class="text-yellow-400">Meta Ads</span> & <span class="text-yellow-400">High-Converting
-                    Websites</span></h1>
+        class="grid md:grid-cols-2 items-center px-6 md:px-12 py-20 bg-gradient-to-r from-blue-700 to-blue-900 text-white">
+        <div class="hero-content space-y-5 text-center md:text-left">
+            <h1 class="text-3xl md:text-4xl font-bold">I Help Businesses Grow with <span
+                    class="text-yellow-400">SEO</span>, <span class="text-yellow-400">Meta Ads</span> & <span
+                    class="text-yellow-400">High-Converting Websites</span></h1>
             <p class="text-lg font-medium">Trusted Digital Marketer & Web Developer delivering traffic, leads & sales.
             </p>
-            <a href="#contact" class="btn bg-yellow-400 text-black py-3 px-6 rounded-full font-bold">Hire Me Now</a>
+            <a href="#contact"
+                class="btn bg-yellow-400 text-black py-3 px-6 rounded-full font-bold inline-block">Hire Me Now</a>
         </div>
-        <div class="hero-img flex justify-center">
+        <div class="hero-img flex justify-center mt-8 md:mt-0">
             <img src="https://i.ibb.co/GQH11mTn/Whats-App-Image-2025-12-20-at-5-26-22-PM-1.jpg"
-                alt="Ali Meta Ads Expert" class="w-80">
+                alt="Ali Meta Ads Expert" class="w-64 md:w-80">
         </div>
     </section>
 
     <!-- ABOUT -->
-    <section id="about" class="py-20 text-center px-8">
+    <section id="about" class="py-20 text-center px-6 md:px-12">
         <h2 class="text-3xl font-bold mb-5">About Me</h2>
         <p class="text-lg max-w-3xl mx-auto">I am a professional <strong>Meta Ads Expert, SEO Specialist & Web
                 Developer</strong>. I create high-converting ad campaigns, optimize websites for SEO, and develop
@@ -162,7 +169,7 @@
     </section>
 
     <!-- SERVICES -->
-    <section id="services" class="py-20 px-8 bg-gray-100">
+    <section id="services" class="py-20 px-6 md:px-12 bg-gray-100">
         <h2 class="text-3xl font-bold text-center mb-10">Services</h2>
         <div class="grid md:grid-cols-3 gap-6">
             <div class="card bg-white p-6 rounded-xl shadow text-center">
@@ -186,9 +193,9 @@
     </section>
 
     <!-- SKILLS -->
-    <section id="skills" class="py-20 px-8 text-center">
+    <section id="skills" class="py-20 px-6 md:px-12 text-center">
         <h2 class="text-3xl font-bold mb-10">Skills</h2>
-        <div class="grid md:grid-cols-5 gap-6">
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
             <div class="skills bg-blue-100 p-5 rounded-xl flex flex-col items-center gap-2">
                 <img src="https://img.icons8.com/color/48/000000/html-5.png">
                 <span>HTML</span>
@@ -213,7 +220,7 @@
     </section>
 
     <!-- PORTFOLIO / RESULTS -->
-    <section id="portfolio" class="py-20 px-8 bg-gray-50">
+    <section id="portfolio" class="py-20 px-6 md:px-12 bg-gray-50">
         <h2 class="text-3xl font-bold text-center mb-10">Portfolio & Results</h2>
         <div class="grid md:grid-cols-3 gap-6">
             <div class="card bg-white p-6 rounded-xl shadow text-center">
@@ -232,7 +239,7 @@
     </section>
 
     <!-- CONTACT / HIRE -->
-    <section id="contact" class="py-20 px-8 text-center">
+    <section id="contact" class="py-20 px-6 md:px-12 text-center">
         <h2 class="text-3xl font-bold mb-5">Let’s Work Together</h2>
         <p class="mb-5 text-lg">Hire me instantly via the buttons below:</p>
         <div class="flex flex-wrap justify-center gap-4">
@@ -257,6 +264,8 @@
         <p>© 2025 Ali | Meta Ads Expert, SEO Specialist & Web Developer</p>
     </footer>
 
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         // Scroll Animation
         $(document).ready(function () {
